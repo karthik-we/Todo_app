@@ -16,6 +16,6 @@ mongoose.connect(process.env.DB_CONNECT)
 .then(()=> console.log("Database connected"))
 .catch(err => console.log(err))
 
-app.use('/', TodoItemRoute);
+app.use('/read', TodoItemRoute);
 
 app.listen(PORT, ()=> console.log("Server connected"));
